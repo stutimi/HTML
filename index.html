@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex justify-center items-center h-screen bg-black">
+
+  <div class="text-center w-full max-w-md p-5 rounded-lg shadow-lg bg-blue-900">
+    <h1 class="text-4xl font-bold mb-4 text-blue-300">Number Guessing Game</h1>
+    <p class="mb-4 text-blue-200">Guess a number between <span id="min">1</span> and <span id="max">100</span></p>
+
+    <input type="number" id="guessInput" class="w-full p-2 text-black mb-4" placeholder="Enter your guess" />
+    <button id="guessBtn" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Submit Guess</button>
+
+    <div id="message" class="text-xl font-bold my-4"></div>
+    <div id="attempts" class="text-md font-semibold mb-4 text-blue-100">Attempts: 0</div>
+
+    <button id="restartBtn" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700 hidden">Restart Game</button>
+
+    <audio id="winSound" class="button-sound" src="https://www.fesliyanstudios.com/play-mp3/387"></audio>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

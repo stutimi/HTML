@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe</h1>
+        
+        <!-- Input fields for player names -->
+        <div id="name-input">
+            <label for="playerX">Player X Name:</label>
+            <input type="text" id="playerX" placeholder="Enter Player X Name" required>
+            <label for="playerO">Player O Name:</label>
+            <input type="text" id="playerO" placeholder="Enter Player O Name" required>
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <!-- Game board -->
+        <div id="game-area" style="display: none;">
+            <div id="tic-tac-toe-board">
+                <div class="cell" id="0"></div>
+                <div class="cell" id="1"></div>
+                <div class="cell" id="2"></div>
+                <div class="cell" id="3"></div>
+                <div class="cell" id="4"></div>
+                <div class="cell" id="5"></div>
+                <div class="cell" id="6"></div>
+                <div class="cell" id="7"></div>
+                <div class="cell" id="8"></div>
+            </div>
+            <button id="restart">Restart Game</button>
+            <p id="status"></p>
+        </div>
+
+        <!-- Modal for displaying the winner or draw -->
+        <div id="winner-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="winner-message"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
